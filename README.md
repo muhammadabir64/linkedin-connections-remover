@@ -16,7 +16,7 @@ Automate the removal of LinkedIn connections using Python and Selenium. This scr
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/linkedin-connection-remover.git
+   git clone https://github.com/muhammadabir64/linkedin-connections-remover.git
    cd linkedin-connection-remover
    ```
 2. Install the required libraries:
