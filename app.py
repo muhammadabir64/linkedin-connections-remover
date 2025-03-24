@@ -37,17 +37,17 @@ COUNTER = 0
 while True:
     try:
         # Step 4: Locate and click the "More" button on each connection card to open options
-        more_button = browser.find_element(By.XPATH, '//button[contains(@class, "mn-connection-card__dropdown-trigger")]')
+        more_button = browser.find_element(By.XPATH, "//button[@data-view-name='connections-remove-connection-dropdown']")
         more_button.click()
         time.sleep(1)  # Small delay to allow dropdown to appear
         
         # Step 5: Select "Remove Connection" option from the dropdown
-        remove_button = browser.find_element(By.XPATH, '//span[text()="Remove connection"]/..')
+        remove_button = browser.find_element(By.XPATH, "//p[text()='Remove connection']")
         remove_button.click()
         time.sleep(2)  # Small delay for the confirmation dialog to appear
         
         # Step 6: Confirm the removal of the connection
-        confirm_button = browser.find_element(By.XPATH, '//span[text()="Remove"]/..')
+        confirm_button = browser.find_element(By.XPATH, "//button[@data-view-name='connections-remove']")
         confirm_button.click()
         
         # Update the counter and print the count of removed connections
